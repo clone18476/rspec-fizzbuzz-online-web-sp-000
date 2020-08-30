@@ -18,12 +18,14 @@ require 'pry'
 
 
 def fizzbuzz(i)
-  if i % 3 == 0
-    "Fizz"
+  if i % 3 == 0 && i % 5 == 0
+    "FizzBuzz"
   elsif i % 5 == 0
     "Buzz"
-  elsif i % 3 == 0 && i % 5 == 0
-    "FizzBuzz"
+  elsif i % 3 == 0
+    "Fizz"
+  else 
+    nil 
   end
 end
 
@@ -41,3 +43,15 @@ end
 #    puts number
 #  end 
 #end
+
+def fizzbuzz(int)
+  if int % 3 == 0 # if the number int is divisible by 3
+    "Fizz" # Go fizz
+    elsif int % 5 == 0 
+    "Buzz" 
+    elsif int % 3 && 5 == 0  
+    "FizzBuzz"
+  else 
+    nil 
+  end
+end
